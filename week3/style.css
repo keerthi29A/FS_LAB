@@ -1,0 +1,49 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Image */
+  .responsive-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Text */
+  .responsive-text {
+    font-size: 4vw; /* Viewport width unit for responsiveness */
+    text-align: justify;
+  }
+  
+  /* Flexbox for Responsive Layout */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+  }
+  
+  /* Media Queries for different screen sizes */
+  @media (max-width: 800px) {
+    body {
+      background-color: #e0f7fa;
+    }
+  
+    .box {
+      font-size: 3vw;
+      flex: 100%; /* Make boxes take up full width on small screens */
+    }
+  }
+  
